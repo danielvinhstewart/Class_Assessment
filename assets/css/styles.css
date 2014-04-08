@@ -1,1 +1,15 @@
-@import 'reset.css';
+/**@import 'reset.css';**/
+
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+h1 span{
+    display: none;
+}
+h1 a{
+    display: block;
+    width: 171px;
+    height: 38px;
+    background: url('../images/arrow-media-logo.png') no-repeat center center;
+}
