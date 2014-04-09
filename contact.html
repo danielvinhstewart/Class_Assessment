@@ -37,6 +37,13 @@
 
 
     <div class="section">
+        <div>
+            <p class="cycle-slideshow">
+                <img src="assets/images/slideshow/php-development-slide_3.jpg" alt="Arrow Media PHP Development" />
+                <img src="assets/images/slideshow/php-development-slide_4.jpg" alt="Arrow Media PHP Development" />
+                <img src="assets/images/slideshow/php-development-slide_2.jpg" alt="Arrow Media PHP Development" />
+            </p>
+        </div>
         <h2>Contact Us</h2>
         <form method="post" action="http://webdesignstudents.co.uk/students/response.php">
             <table>
@@ -88,5 +95,13 @@
         </nav>
     </footer>
 </div>
+<script src="assets/libs/min/jquery.min.js"></script>
+<script src="assets/js/min/cycle2/jquery.cycle2.min.js"></script>
+<script src="assets/js/min/cycle2/jquery.cycle2.ie-fade.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.cycle-slideshow').cycle();
+    })
+</script>
 </body>
 </html>

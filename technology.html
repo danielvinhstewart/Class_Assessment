@@ -37,8 +37,8 @@
 
 
     <div class="section">
-            <div class="slideshow">
-                <p>
+            <div>
+                <p class="cycle-slideshow">
                     <img src="assets/images/slideshow/php-development-slide_2.jpg" alt="Arrow Media PHP Development" />
                     <img src="assets/images/slideshow/php-development-slide_3.jpg" alt="Arrow Media PHP Development" />
                     <img src="assets/images/slideshow/php-development-slide_6.jpg" alt="Arrow Media PHP Development" />
@@ -150,5 +150,16 @@
         </nav>
     </footer>
 </div>
+
+<!-- scripts -->
+
+<script src="assets/libs/min/jquery.min.js"></script>
+<script src="assets/js/min/cycle2/jquery.cycle2.min.js"></script>
+<script src="assets/js/min/cycle2/jquery.cycle2.ie-fade.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.cycle-slideshow').cycle();
+    })
+</script>
 </body>
 </html>
