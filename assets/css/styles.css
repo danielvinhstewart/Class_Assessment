@@ -1,6 +1,11 @@
-@import 'reset.css';
+@import 'normalize.css';
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+/** RAW MEDIA SETTINGS (FOR MOBILE) **/
 
 body{
+    padding: 0;
+    font: 14px/1.5 'Open Sans', sans-serif;
     width: 100%;
     margin: 0 auto;
 }
@@ -9,7 +14,205 @@ h1 span{
 }
 h1 a{
     display: block;
-    width: 171px;
+    width: 170px;
     height: 38px;
     background: url('../images/arrow-media-logo.png') no-repeat center center;
+}
+h1{
+    padding: 0;
+    align-content: center;
+}
+h2,h3,h4{
+    font-weight: 600;
+    margin: 0 10px;
+    clear: both;
+}
+h4{
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/** MENU ADJUSTMENTS **/
+
+header ul, footer ul{
+    text-align: center;
+    padding: 0;
+    height: 24px;
+    list-style: none;
+}
+header li, footer li{
+    width: 100%;
+    text-align: center;
+    margin: 1px 0;
+}
+header a,footer a{
+    text-decoration: none;
+    width: 100%;
+    color: #FFF;
+    background-color: #000;
+    display: block;
+    padding: 7px 0;
+}
+
+/** BODY **/
+
+div.section {
+    clear: both;
+    margin: 180px 0 20px 0;
+}
+.section p, .section ul, .section dl{
+    margin: 16px 18px;
+}
+dt{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+dd{
+    margin-left: 10px;
+    font-style: italic;
+    font-size: small;
+    margin-bottom: 15px;
+}
+/** IMAGES **/
+
+div img{
+    display: block;
+    margin: 0 auto;
+}
+div.three-columns img{
+    width: 200px;
+    height: auto;
+}
+p img.sml-icon{
+    width: 150px;
+}
+.blue{
+    background: royalblue repeat-x;
+    margin: 0;
+}
+p.cycle-slideshow{
+    display: none;
+}
+p.float-image img{
+    width: 25%;
+    float: left;
+}
+p.logo img{
+    width: 15%;
+    float: left;
+    padding: 10px 0 10px 5px;
+}
+
+/** FOOTER ADJUSTMENTS TO REMOVE WHITE MARGIN **/
+
+footer p{
+    font-size: smaller;
+    text-align: center;
+}
+.last-list{
+    margin-bottom: 0;
+}
+#terms{
+    font-size: small;
+}
+#terms li{
+    margin: 10px 0;
+}
+
+/** TABLE STYLES **/
+
+table{
+    display: block;
+    margin-left:10%;
+    width: 90%;
+    height: auto;
+}
+td.label{
+    vertical-align: middle;
+    padding-right: 10px;
+}
+td.form{
+    vertical-align: bottom;
+}
+tr.submit{
+    text-align: center;
+}
+/** z-index: -1; **/
+
+/** MEDIA SETTINGS M-SIZE **/
+
+@media (min-width: 481px) {
+    body{
+        padding: 0;
+        width: 750px;
+
+    }
+    div.section{
+        clear: both;
+    }
+    header {
+        margin: 0;
+        clear: both;
+    }
+    h1{
+        padding: 0 20px;
+    }
+    h1 a{
+        padding: 29px 0;
+    }
+    header li, footer li{
+        margin: 0;
+    }
+    header h1 {
+        width: 25%;
+        float: left;
+        padding: 0 2.5%;
+        background-color: #000;
+    }
+    header nav {
+        width: 70%;
+        float: right;
+    }
+    header nav li {
+        width: 140px;
+        float: left;
+    }
+    header nav li a {
+        padding: 14px 0;
+    }
+    p.cycle-slideshow img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    div.section {
+        clear: both;
+        margin: 159px 0 20px 0;
+    }
+    .three-columns{
+
+    }
+}
+
+/** MEDIA SETTINGS L-SIZE **/
+
+@media (min-width: 960px) {
+    body{
+        max-width: 960px;
+    }
+    body img{
+        max-width: 960px;
+    }
+}
+
+/** MEDIA SETTINGS XL-SIZE **/
+
+@media (min-width: 1024px) {
+    body{
+        max-width: 1245px;
+    }
+    body img{
+        max-width: 1245px;
+    }
 }
