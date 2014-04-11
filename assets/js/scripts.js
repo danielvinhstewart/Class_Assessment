@@ -2,18 +2,18 @@ var hideItems, oldElement, showItem;
 
 oldElement = null;
 
-showItem = function(currId) {
+showItem = function (currId) {
   var currElement;
   currElement = document.getElementById(currId).style;
   if (oldElement) {
     oldElement.display = 'none';
   }
-  currElement = 'block';
+  currElement.display = 'block';
   oldElement = currElement;
   return false;
 };
 
-hideItems = function(currEles, eleClass) {
+hideItems = function (currEles, eleClass) {
   var elements, i, _i, _len;
   elements = document.getElementsByTagName(currEles);
   for (_i = 0, _len = elements.length; _i < _len; _i++) {

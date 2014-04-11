@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <title>FAQ - Arrow Media</title>
     <script src="../assets/libs/min/modernizr.min.js"></script>
+    <script src="../assets/js/scripts.js"></script>
     <link href="../assets/css/styles.css" rel="stylesheet" media="all"/>
 </head>
 
@@ -13,7 +14,7 @@
 
 
 
-<body>
+<body onload="hideItems('dd','hidden-preview'), showItem('oner')">
 <div class="container">
     <header>
         <h1><a href="../index.html"><span>Arrow Media</span></a></h1>
@@ -46,20 +47,20 @@
         <div>
             <h2>Asked Questions</h2>
             <dl>
-            <dt>What happens in the initial stages of a project?</dt>
-                <dd>At Arrow Media, our well-adjusted members of staff are often likely to leave all work until the very last minute. The initial stages of any project can be seen as procrastinating at the highest most professional level.</dd>
-            <dt>How often will information about the projects progress be discussed?</dt>
-                <dd>Depending on many macro elements (i.e. the weather outside and/or the severity of our hangover), customers can rest assured that members of Arrow Media have a 15% likelihood of contacting their customers on a monthly basis.</dd>
-            <dt>Who do we contact within the company if we have a question?</dt>
-                <dd>Please hold Arrow Media's help line on 01273 123 456. Your calls are very important to us.</dd>
-            <dt>How much does a typical project cost?</dt>
-                <dd>Project prices are calculated based off of an hourly rate of &pound;35. A minimum fee of &pound;90 applies to all projects.</dd>
-            <dt>How long does a typical project take to complete?</dt>
-                <dd>Completion times between projects ultimately depend on the size of the work and how much of a decent first impression you leave on us. Should we find out that you were the fry-cook that spat in our burgers 8 years ago, you can expect the same niceties and stellar performance from us.</dd>
-            <dt>What are the payment terms?</dt>
-                <dd>Terms of payment can be found in our <a href="terms.html">Terms &amp; Conditions</a> page. Please read through every single point to ensure you are familiar with them.</dd>
-            <dt>What happens after the project is completed?</dt>
-                <dd>Unfortunately, we are only responsible for the functionality of any project whilst we are being paid. Sorry for not holding your hand the entire way through.</dd>
+                <dt><a href="#" onclick="return showItem('oner')">What happens in the initial stages of a project?</a></dt>
+                <dd id="oner" class="hidden-preview">At Arrow Media, our well-adjusted members of staff are often likely to leave all work until the very last minute. The initial stages of any project can be seen as procrastinating at the highest most professional level.</dd>
+                <dt><a href="#" onclick="return showItem('twoer')">How often will information about the projects progress be discussed?</a></dt>
+                <dd id="twoer" class="hidden-preview">Depending on many macro elements (i.e. the weather outside and/or the severity of our hangover), customers can rest assured that members of Arrow Media have a 15% likelihood of contacting their customers on a monthly basis.</dd>
+                <dt><a href="#" onclick="return showItem('threer')">Who do we contact within the company if we have a question?</a></dt>
+                <dd id="threer" class="hidden-preview">Please hold Arrow Media's help line on 01273 123 456. Your calls are very important to us.</dd>
+                <dt><a href="#" onclick="return showItem('fourer')">How much does a typical project cost?</a></dt>
+                <dd id="fourer" class="hidden-preview">Project prices are calculated based off of an hourly rate of &pound;35. A minimum fee of &pound;90 applies to all projects.</dd>
+                <dt><a href="#" onclick="return showItem('fiver')">How long does a typical project take to complete?</a></dt>
+                <dd id="fiver" class="hidden-preview">Completion times between projects ultimately depend on the size of the work and how much of a decent first impression you leave on us. Should we find out that you were the fry-cook that spat in our burgers 8 years ago, you can expect the same niceties and stellar performance from us.</dd>
+                <dt><a href="#" onclick="return showItem('sixer')">What are the payment terms?</a></dt>
+                <dd id="sixer" class="hidden-preview">Terms of payment can be found in our <a href="terms.html">Terms &amp; Conditions</a> page. Please read through every single point to ensure you are familiar with them.</dd>
+                <dt><a href="#" onclick="return showItem('sevener')">What happens after the project is completed?</a></dt>
+                <dd id="sevener" class="hidden-preview">Unfortunately, we are only responsible for the functionality of any project whilst we are being paid. Sorry for not holding your hand the entire way through.</dd>
             </dl>
         </div>
     </div>
