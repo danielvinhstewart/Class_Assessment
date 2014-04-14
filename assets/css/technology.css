@@ -1,0 +1,8 @@
+@media (min-width: 481px){
+    div.three-columns h3{
+        margin-left: 50px;
+    }
+    div.three-columns ul{
+        margin-left: 60px;
+    }
+}

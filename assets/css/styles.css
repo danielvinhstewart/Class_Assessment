@@ -136,9 +136,8 @@ p.logo img{
     float: left;
     padding: 10px 0 10px 5px;
 }
-p.showcase img{
-    width: 100%;
-    max-width: 340px;
+.preview img{
+    display: none;
 }
 p.wordpress img{
     width: 100%;
@@ -239,6 +238,25 @@ tr.submit{
         margin: 0 auto;
         max-width: 750px;
         width: 100%;
+    }
+    .preview{
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        top: 600px;
+    }
+    .preview img{
+        display: block;
+        width: 70%;
+        margin-left:15%;
+        margin-right: 15%;
+    }
+    div.thumbs{
+        margin-top: 450px;
+    }
+    p.showcase img{
+        width: 100%;
+        max-width: 340px;
     }
     p.wordpress{
         max-width:480px;
@@ -411,6 +429,12 @@ tr.submit{
     #too-short-5{
         height: 90px;
     }
+    .preview{
+        top: 480px;
+    }
+    div.thumbs{
+        margin-top: 480px;
+    }
 }
 
 @media (min-width: 960px){
@@ -484,5 +508,22 @@ tr.submit{
     p.mini{
         display: block;
         margin: 0 auto;
+    }
+
+    .preview{
+        display: block;
+        margin: 0 auto;
+        top: 580px;
+    }
+    .preview img{
+        width: 740px;
+    }
+    .thumbnailgroup{
+        float: left;
+        margin: 250px 10px 0 10px;
+        width: 300px;
+    }
+    div.thumbs, #mainback{
+        clear: both;
     }
 }
